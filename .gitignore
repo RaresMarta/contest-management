@@ -1,0 +1,17 @@
+# === FRONTEND (Node.js / React) ===
+frontend/node_modules/
+frontend/.env
+frontend/dist/
+frontend/.vite/
+
+# === BACKEND (Java / Spring Boot) ===
+backend/target/
+backend/.idea/
+backend/*.iml
+backend/.classpath
+backend/.project
+
+# === General ===
+.DS_Store
+*.log
+.env

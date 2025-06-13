@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.Main.MainController"
+            prefWidth="800" prefHeight="500">
+    <!-- Left Pane: Filter + Competitions ListView -->
+    <left>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <!-- Filter Row -->
+            <HBox spacing="5">
+                <Label text="Type:"/>
+                <ComboBox fx:id="typeComboBox"/>
+                <Label text="Age:"/>
+                <ComboBox fx:id="ageComboBox"/>
+            </HBox>
+
+            <!-- Competitions List -->
+            <ListView fx:id="competitionsListView" prefHeight="400" prefWidth="500"/>
+        </VBox>
+    </left>
+
+    <!-- Center Pane: Participants ListView for selected Competition -->
+    <center>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label text="Participants for selected competition"/>
+            <ListView fx:id="participantsListView" prefHeight="400"/>
+        </VBox>
+    </center>
+
+    <!-- Bottom Pane: Add Participant Form -->
+    <bottom>
+        <VBox spacing="5">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label text="Add Participant"/>
+            <HBox spacing="10">
+                <Label text="Name:"/>
+                <TextField fx:id="nameField" prefWidth="100"/>
+                <Label text="Age:"/>
+                <TextField fx:id="ageField" prefWidth="50"/>
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Comp 1:"/>
+                <ComboBox fx:id="comp1ComboBox" prefWidth="150"/>
+                <Label text="Comp 2:"/>
+                <ComboBox fx:id="comp2ComboBox" prefWidth="150"/>
+                <Button text="Add Participant" onAction="#onAddParticipantClicked"/>
+            </HBox>
+        </VBox>
+    </bottom>
+</BorderPane>
