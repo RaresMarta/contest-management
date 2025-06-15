@@ -86,5 +86,5 @@ The UI is built with reusable React components, clean layout, and async data fet
   
 ## 📸 Preview
 
-![App Screenshot](frontend/public/image.png)
+![App Screenshot](frontend/public/preview.png)
 
