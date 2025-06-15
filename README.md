@@ -7,17 +7,17 @@ A full-stack web application for managing competitions and participant enrollmen
 - ✅ Multi-user login system
 - ✅ Filter competitions by type and age category
 - ✅ View participants for selected competitions
-- ✅ Enroll participants into available competitions
+- ✅ Enroll participants into min. 1, max. 2 competitions
 - ✅ RESTful API with full CRUD support
-- ✅ Clean and responsive UI
+- ✅ Clean and responsive UI using **Bulma** CSS framework
 
 ## 🧱 Tech Stack
 
-| Layer       | Technology         |
-|-------------|--------------------|
-| Frontend    | React + TypeScript + Vite |
-| Backend     | Java + Spring Boot + Hibernate |
-| Data Format | JSON via REST API  |
+| Layer       | Technology                         |
+|-------------|-------------------------------------|
+| Frontend    | React + TypeScript + Vite + Bulma  |
+| Backend     | Java + Spring Boot + Hibernate     |
+| Data Format | JSON via REST API                  |
 
 ---
 
@@ -60,7 +60,6 @@ Base URL: `http://localhost:8080/api/competitions`
 
 Similar endpoints are available for `/api/participants` and `/api/users`.
 
----
 
 ## 🧪 Backend Testing
 A manual test class is provided in `backend/src/main/test/CompetitionTest.java` which performs:
@@ -71,6 +70,9 @@ A manual test class is provided in `backend/src/main/test/CompetitionTest.java` 
 - DELETE: remove a competition
 
 You can run this file as a standalone Java application to test the REST API functionality.
+Additionally, **Postman** was used throughout development to simulate and verify all API endpoints with real JSON requests
+
+---
 
 ## 🖼️ UI Overview  
 Once logged in, the app displays:
@@ -80,7 +82,7 @@ Once logged in, the app displays:
 - list of participants for the selected competition (right side)
 - form to add new participants
 
-  The UI is built with reusable React components, clean layout, and async data fetching via the REST API.
+The UI is built with reusable React components, clean layout, and async data fetching via the REST API.
   
 ## 📸 Preview
 
