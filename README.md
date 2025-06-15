@@ -33,7 +33,7 @@ cd backend
 ```
 ./mvnw spring-boot:run
 ```
-  The server will start at http://localhost:8080
+The server will start at `http://localhost:8080`
 
 ### 2️⃣ Frontend (React)
 Open a new terminal and navigate to the frontend directory:
@@ -57,7 +57,8 @@ Base URL: `http://localhost:8080/api/competitions`
 | POST   | `/api/competitions`      | Create new competition   |
 | PUT    | `/api/competitions/{id}` | Update competition by ID |
 | DELETE | `/api/competitions/{id}` | Delete competition by ID |
-  Similar endpoints are available for /api/participants and /api/users.
+
+Similar endpoints are available for /api/participants and /api/users.
 
 ---
 
@@ -81,6 +82,7 @@ Once logged in, the app displays:
 
   The UI is built with reusable React components, clean layout, and async data fetching via the REST API.
   
-📸 Preview
+## 📸 Preview
+
 ![App Screenshot](frontend/public/image.png)
 
