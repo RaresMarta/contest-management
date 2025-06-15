@@ -43,7 +43,7 @@ cd frontend
 npm install
 npm run dev
 ```
-  The app will be available at http://localhost:5173
+  The app will be available at `http://localhost:5173`
 
 ---
 
@@ -58,12 +58,12 @@ Base URL: `http://localhost:8080/api/competitions`
 | PUT    | `/api/competitions/{id}` | Update competition by ID |
 | DELETE | `/api/competitions/{id}` | Delete competition by ID |
 
-Similar endpoints are available for /api/participants and /api/users.
+Similar endpoints are available for `/api/participants` and `/api/users`.
 
 ---
 
 ## 🧪 Backend Testing
-A manual test class is provided in backend/src/main/test/CompetitionTest.java which performs:
+A manual test class is provided in `backend/src/main/test/CompetitionTest.java` which performs:
 
 - POST: create a new competition
 - GET: fetch all and by ID
@@ -72,7 +72,7 @@ A manual test class is provided in backend/src/main/test/CompetitionTest.java wh
 
 You can run this file as a standalone Java application to test the REST API functionality.
 
-🖼️ UI Overview
+## 🖼️ UI Overview  
 Once logged in, the app displays:
 
 - filter bar to select competition type and age category
